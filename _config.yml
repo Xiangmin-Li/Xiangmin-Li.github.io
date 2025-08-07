@@ -12,10 +12,10 @@ baseurl: ""
 future: true
 
 # SNS settings
-RSS: false
+RSS: true
 #weibo_username:
 #zhihu_username:
-#github_username: Xiangmin-Li
+github_username: Xiangmin-Li
 #twitter_username:
 #facebook_username:
 #linkedin_username:
