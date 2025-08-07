@@ -1,6 +1,6 @@
 # Site settings
 title: Xiangmin's Blog
-SEOTitle: 李相民的博客 | Xiangmin's Blog
+SEOTitle: 李相民的技术博客 | Xiangmin's Blog
 header-img: img/home-bg.jpg
 email: li_xiangmin@qq.com
 description: "这里是李相民的个人博客，记录游戏开发的思考与实践 | 心有所向, 日复一日, 必有精进!"
@@ -63,7 +63,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true
-sidebar-about-description: "心有所向, 日复一日, 必有精进!"
+sidebar-about-description: "李相民\n网络工程师 Unity独立开发者\n心有所向, 日复一日, 必有精进!"
 sidebar-avatar: https://github.com/Xiangmin-Li.png # 如果你有 GitHub 头像，这个链接是可用的
 
 # Featured Tags
@@ -79,8 +79,5 @@ page-mathjax: false
 
 # Friends
 friends:
-  [
-   # { title: "OpenAI", href: "https://openai.com" },
-   # { title: "Unity", href: "https://unity.com" },
-   # { title: "知乎 - 游戏设计", href: "https://www.zhihu.com/topic/19555428" }
+  [ 
   ]
