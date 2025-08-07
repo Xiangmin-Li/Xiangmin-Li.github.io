@@ -12,11 +12,11 @@ baseurl: ""
 future: true
 
 # SNS settings
-RSS: true
-weibo_username:
-zhihu_username:
-github_username: Xiangmin-Li
-twitter_username:
+RSS: false
+#weibo_username:
+#zhihu_username:
+#github_username: Xiangmin-Li
+#twitter_username:
 #facebook_username:
 #linkedin_username:
 
@@ -67,8 +67,8 @@ sidebar-about-description: "心有所向, 日复一日, 必有精进!"
 sidebar-avatar: https://github.com/Xiangmin-Li.png # 如果你有 GitHub 头像，这个链接是可用的
 
 # Featured Tags
-featured-tags: true
-featured-condition-size: 1
+featured-tags: false
+# featured-condition-size: 1
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
