@@ -10,11 +10,11 @@ catalog: true
 ---
 
 
-C#
+# C\#
 
 # 代码基本结构
 
-```c# title="基本结构"
+```csharp
 // 引入System命名空间
 using System;
 
@@ -57,7 +57,7 @@ namespace BasicStructureDemo
 
 # 开发文件结构
 
-```c# 
+``` 
 [项目根目录]
 │
 ├── MySolution.sln                // 解决方案文件，管理多个项目的关联关系和构建配置
@@ -108,7 +108,7 @@ namespace BasicStructureDemo
 
 # 类型
 
-```c# 
+```csharp 
 class VariableTypesDemo
 {
     enum Status { Active, Inactive }  // 枚举类型
@@ -152,8 +152,8 @@ class VariableTypesDemo
 | !    | 非  | 反转布尔值 \`!true\`→\`false\` |
 
 # 分支语句
-
-```c# title="分支语句：if"
+## if
+```csharp
 if (条件1)
 {
     // 条件1为 true 时执行
@@ -169,8 +169,8 @@ else
 
 ```
 
-
-```c# title="分支语句：Switch"
+## switch
+```csharp
 string day = "Monday";
 switch (day)
 {
@@ -188,8 +188,8 @@ switch (day)
 
 ```
 
-
-```c# title="三元运算符"
+##三元运算符
+```csharp
 int age = 18;
 string status = (age >= 18) ? "成年人" : "未成年人";
 
@@ -200,7 +200,7 @@ var result = condition ? valueIfTrue : valueIfFalse; //语法
 
 ## 循环
 
-```c# title="for循环"
+```csharp
 //语法
 for (初始化; 条件; 迭代)
 {
@@ -236,8 +236,8 @@ while (count < 5)
 
 ```
 
-
-```c# title="do-while 循环（至少执行一次循环体）"
+## do-while 循环 (至少执行一次循环体)
+```csharp
 //语法
 do
 {
@@ -256,8 +256,8 @@ do
 
 ```
 
-
-```c# title="foreach 循环"
+# foreach遍历
+```csharp
 //语法
 foreach (类型 变量 in 集合)
 {
@@ -274,8 +274,8 @@ foreach (int num in numbers)
 
 ```
 
-
-```c# title="循环控制语句break continue"
+## 循环控制语句break continue
+```csharp
 //break立即终止当前循环，跳出循环体
 for (int i = 0; i < 10; i++)
 {
