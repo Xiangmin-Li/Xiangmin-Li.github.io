@@ -1,8 +1,8 @@
 # Site settings
 title: Xiangmin's Dev Blog
-SEOTitle: 李相民的博客 | Xiangmin's Dev Blog
+SEOTitle: 李相民的博客 | Xiangmin's Blog
 header-img: img/home-bg.jpg
-email: xiangmin@example.com
+email: li_xiangmin@qq.com
 description: "这里是李相民的个人博客，记录游戏开发的思考与实践 | 心有所向, 日复一日, 必有精进!"
 keyword: "李相民, 独立开发者, Unity, 游戏开发, C#, 技术博客, 独立游戏,"
 url: "https://Xiangmin-Li.github.io"
@@ -63,7 +63,7 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true
-sidebar-about-description: "热爱技术、研究历史、开发游戏，用代码描绘未来世界。"
+sidebar-about-description: "心有所向, 日复一日, 必有精进!"
 sidebar-avatar: https://github.com/Xiangmin-Li.png # 如果你有 GitHub 头像，这个链接是可用的
 
 # Featured Tags
