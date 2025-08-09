@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Hello World"
-subtitle:   " \"Hello World, Hello Blog\""
+title:      "一切的起点"
+subtitle:   " 扉不有初，鮮克有終。 "
 date:       2025-08-7 20:00:00
 author:     "Xiangmin Li"
 header-img: "img/post-bg-2015.jpg"
@@ -9,53 +9,34 @@ catalog: true
 #tags:
 ---
 
+# 开始C#编程语言的学习
 
-# C\#
+大概在三四年前，我萌生了一个想法：做游戏！
 
-# 代码基本结构
+如今，终于是安稳了一些，使我可以着手去实现它了．
 
-```csharp
-// 引入System命名空间
-using System;
+这里，大概就是梦的起点了吧．
 
-// 定义程序的主命名空间，用于组织相关代码
-namespace BasicStructureDemo 
-{
-    // 主程序类，包含程序入口点和功能方法
-    class Program 
-    {
-        // 程序入口方法（必须为static void），程序启动时自动执行
-        static void Main() 
-        {
-            // 基础输出演示
-            Console.WriteLine("Hello C# World!");
+## 第一步
 
-            // 变量声明与条件判断
-            int number = 10;
-            
-            if (number > 5) 
-            {
-                // 使用字符串插值语法（$符号）输出变量值
-                Console.WriteLine($"数字 {number} 大于5");
-            }
+开发游戏的第一步，毫无疑问是掌握**C#编程语言**以及**Unity引擎的用法**
 
-            // 调用自定义方法打印当前时间
-            PrintCurrentTime();
-        }
+当然在这之前，还要具备计算机的基础知识: 
+>**离散数学** <br>**线性代数** <br>**操作系统** <br>**计算机网络**<br>**计算机组成原理**<br>**数据结构**<br>**软件工程**
 
-        // 自定义静态方法（可在不创建对象的情况下调用）
-        static void PrintCurrentTime() 
-        {
-            // 获取系统当前时间并格式化输出
-            Console.WriteLine($"当前时间：{DateTime.Now}");
-        }
-    }
-}
+准备好以上的知识储备后, 就是紧张刺激的编程学习了
 
-```
+## 方向和方法
 
+学习一门编程语言的第一步, 自然是了解它的全景图, C#是一门编程语言, 但它不仅仅是语言, 除了代码这种用来描述逻辑的形式语言外, 还有它的运行环境以及编译过程. 
 
-# 开发文件结构
+C#的运行环境被称为CLR, C#源代码经过csc编译器成为IL中间语言,然后在CLR和JIT的共同作用下进一步被解释或编译为机器码成为CPU可执行的指令. 
+
+正是由于CLR的存在, 使得C#语言可以在多平台上运行, CLR还提供GC自动回收垃圾, 异常处理等较为先进的功能, 所以说,C#是一门高级语言, 学习C#是要比C要难一些. 
+
+C#是支持面向对象思想的, 面向对象OOP思想是一个比较抽象的代码组织思想, 想要熟练掌握它, 搞不好是需要成千上万小时的敲代码来磨炼, 有人说, 编程是一门手艺, 既然是手艺那就需要大量的练习来刷熟练度, 这是没有捷径可走的, 干就完了. 
+
+## 开发文件结构
 
 ``` 
 [项目根目录]
@@ -105,191 +86,3 @@ namespace BasicStructureDemo
 └── .gitignore                    // Git版本控制忽略规则
 ```
 
-
-# 类型
-
-```csharp 
-class VariableTypesDemo
-{
-    enum Status { Active, Inactive }  // 枚举类型
-
-    struct Point
-    {
-        public int X, Y;
-    }  // 结构体类型
-
-    public void fuck()
-    {
-        // 值类型
-        int age = 25;               // 整型
-        double price = 9.99;        // 双精度浮点
-        bool isReady = true;        // 布尔型
-        char grade = 'A';           // 字符型
-        decimal salary = 5000.50m;  // 高精度小数
-        byte code = 0xFF;           // 字节类型
-
-        // 引用类型
-        string name = "ChatGPT";                     // 字符串
-        int[] numbers = { 1, 2, 3 };                 // 数组
-        object obj = new { Id = 1, Name = "Test" };  // 匿名对象
-        dynamic dynamicVar = "可改变类型";           // 动态类型
-
-        // 自定义类型
-        Point p = new Point { X = 10, Y = 20 };  // 结构体实例
-        Status state = Status.Active;            // 枚举实例
-        var person = new { Age = 30 };           // 匿名类型
-    }
-}
-```
-
-
-# 布尔运算
-
-| 运算符  | 名称 | 描述                        |
-| ---- | -- | ------------------------- |
-| &&   | 与  | 两操作数均为\`true\`时返回\`true\` |
-| \|\| | 或  | 任意操作数为\`true\`时返回\`true\` |
-| !    | 非  | 反转布尔值 \`!true\`→\`false\` |
-
-# 分支语句
-## if
-```csharp
-if (条件1)
-{
-    // 条件1为 true 时执行
-}
-else if (条件2)
-{
-    // 条件2为 true 时执行
-}
-else
-{
-    // 所有条件均不满足时执行
-}
-
-```
-
-## switch
-```csharp
-string day = "Monday";
-switch (day)
-{
-    case "Monday":
-        Console.WriteLine("工作日");
-        break;
-    case "Saturday":
-    case "Sunday":
-        Console.WriteLine("周末"); // 合并多个 case
-        break;
-    default:
-        Console.WriteLine("未知");
-        break;
-}
-
-```
-
-##三元运算符
-```csharp
-int age = 18;
-string status = (age >= 18) ? "成年人" : "未成年人";
-
-var result = condition ? valueIfTrue : valueIfFalse; //语法
-             
-```
-
-
-## 循环
-
-```csharp
-//语法
-for (初始化; 条件; 迭代)
-{
-    // 循环体
-}
-
-//示例
-// 打印 0 到 4
-for (int i = 0; i < 5; i++)
-{
-    Console.WriteLine(i);
-}
-
-```
-
-
-```c# title="while 循环"
-//语法
-while (条件)
-{
-    // 循环体
-}
-
-
-//示例
-// 打印 0 到 4
-int count = 0;
-while (count < 5)
-{
-    Console.WriteLine(count);
-    count++;
-}
-
-```
-
-## do-while 循环 (至少执行一次循环体)
-```csharp
-//语法
-do
-{
-    // 循环体
-} while (条件);
-
-//示例
-// 至少执行一次，直到输入 "exit"
-string input;
-do
-{
-    Console.Write("请输入指令：");
-    input = Console.ReadLine();
-} while (input != "exit");
-
-
-```
-
-# foreach遍历
-```csharp
-//语法
-foreach (类型 变量 in 集合)
-{
-    // 循环体
-}
-
-//示例
-// 遍历数组元素
-int[] numbers = { 1, 2, 3 };
-foreach (int num in numbers)
-{
-    Console.WriteLine(num);
-}
-
-```
-
-## 循环控制语句break continue
-```csharp
-//break立即终止当前循环，跳出循环体
-for (int i = 0; i < 10; i++)
-{
-    if (i == 5) break; // 当 i=5 时终止循环
-    Console.WriteLine(i);
-}
-
-//continue跳过本次循环剩余代码，直接进入下一次迭代
-for (int i = 0; i < 5; i++)
-{
-    if (i == 2) continue; // 跳过 i=2 的循环体
-    Console.WriteLine(i);
-}
-// 输出：0, 1, 3, 4
-
-
-```
